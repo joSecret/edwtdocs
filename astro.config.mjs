@@ -10,14 +10,14 @@ export default defineConfig({
 		starlight({
 			title: 'EDWT Docs',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/joSecret/edwtdocs',
 			},
 			sidebar: [
 				{
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/edwtdocs/guides/example/' },
+						{ label: 'Example Guide', link: '/guides/example/' },
 					],
 				},
 				{
