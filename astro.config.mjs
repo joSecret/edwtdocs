@@ -3,9 +3,13 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://josecret.github.io/edwtdocs/',
+  outDir: 'public',
+  publicDir: 'static',
+
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'EDWT Docs',
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
