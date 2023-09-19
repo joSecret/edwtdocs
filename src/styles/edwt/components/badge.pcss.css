@@ -1,0 +1,27 @@
+.badge {
+  --badge-px: 0.65em;
+  --badge-py: 0.35em;
+  --badge-fs: 0.75em;
+  --badge-fw: 700;
+  --badge-c: #fff;
+
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  padding: var(--badge-py) var(--badge-px);
+  font-size: var(--badge-fs);
+  font-weight: var(--badge-fw);
+  color: var(--badge-c);
+  border-radius: var(--badge-br, var(--br));
+
+  &:empty {
+    display: none;
+  }
+}
+
+.btn .badge {
+  position: relative;
+  top: -1px;
+}

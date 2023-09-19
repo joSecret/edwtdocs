@@ -27,3 +27,31 @@
   --sl-color-gray-7: #f3f8f2;
   --sl-color-black: #ffffff;
 }
+
+.main-frame {
+  padding-left: var(--sl-sidebar-width);
+}
+
+.right-sidebar-panel {
+  a {
+    padding-inline: calc(1rem * var(--depth) + var(--pad-inline))
+      var(--pad-inline);
+  }
+}
+
+.sidebar-pane {
+  border-inline-end: 1px solid var(--sl-color-hairline-shade);
+}
+
+.right-sidebar {
+  border-inline-start: 1px solid var(--sl-color-gray-6);
+}
+
+.header select {
+  padding-inline: calc(var(--sl-label-icon-size) + 0.25rem)
+    calc(var(--sl-caret-size) + 0.25rem);
+}
+
+.header .caret {
+  inset-inline-end: 0;
+}

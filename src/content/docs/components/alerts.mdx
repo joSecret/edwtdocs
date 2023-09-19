@@ -1,0 +1,71 @@
+---
+title: Alerts
+description: ''
+---
+
+import '../../../styles/edwt/components/alert.pcss';
+
+
+Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+
+## Example
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<Tabs>
+	<TabItem label="Example">
+    <div class="alert" role="alert">
+      A simple primary alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-primary" role="alert">
+      A simple primary alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      A simple secondary alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-success" role="alert">
+      A simple success alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-danger" role="alert">
+      A simple danger alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-warning" role="alert">
+      A simple warning alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-info" role="alert">
+      A simple info alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-dark" role="alert">
+      A simple light alert—check it out! <a href="#">Link style</a>
+    </div>
+  </TabItem>
+
+	<TabItem label="HTML">
+    ```HTML
+    <div class="alert" role="alert">
+      A simple primary alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-primary" role="alert">
+      A simple primary alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      A simple secondary alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-success" role="alert">
+      A simple success alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-danger" role="alert">
+      A simple danger alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-warning" role="alert">
+      A simple warning alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-info" role="alert">
+      A simple info alert—check it out! <a href="#">Link style</a>
+    </div>
+    <div class="alert alert-dark" role="alert">
+      A simple light alert—check it out! <a href="#">Link style</a>
+    </div>
+    ```
+  </TabItem>
+</Tabs>

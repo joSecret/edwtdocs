@@ -17,19 +17,47 @@ export default defineConfig({
       },
       customCss: [
         './src/styles/custom.css',
+        './src/styles/edwt/vars.pcss.css',
+        './src/styles/edwt/api.pcss.css',
+        './src/styles/edwt/reboot.pcss.css',
       ],
       sidebar: [
         {
-          label: 'Guides',
-          autogenerate: { directory: 'guides' },
+          label: 'Getting Started',
+          items: [
+            { label: 'Introduction', link: '/start/introduction' },
+            { label: 'Environment Setup', link: '/start/env-setup' },
+            { label: 'Working with PCSS', link: '/start/pcss' },
+            { label: 'Compiled Files', link: '/start/compiled-files' },
+            { label: 'File Structure', link: '/start/file-structure' },
+            { label: 'Resources & assets', link: '/start/resources-assets' },
+            { label: 'Changelog', link: '/start/changelog' },
+          ],
+          // autogenerate: { directory: 'guides' },
           // items: [
           //   // Each item here is one entry in the navigation menu.
           //   { label: 'Example Guide', link: '/guides/example/' },
           // ],
         },
         {
-          label: 'Reference',
-          autogenerate: { directory: 'reference' },
+          label: 'Foundation',
+          autogenerate: { directory: 'foundation' },
+        },
+        {
+          label: 'Utilities',
+          autogenerate: { directory: 'utilities' },
+        },
+        {
+          label: 'Forms',
+          autogenerate: { directory: 'forms' },
+        },
+        {
+          label: 'Components',
+          autogenerate: { directory: 'components' },
+        },
+        {
+          label: 'Custom components',
+          autogenerate: { directory: 'custom' },
         },
       ],
     }),

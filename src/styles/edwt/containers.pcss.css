@@ -1,0 +1,34 @@
+:root {
+  --gutter-x: 20px;
+  --gutter-y: 20px;
+
+  @media (--sm) {
+    --container-mw: 540px;
+  }
+
+  @media (--md) {
+    --container-mw: 720px;
+  }
+
+  @media (--lg) {
+    --container-mw: 960px;
+  }
+
+  @media (--xl) {
+    --container-mw: 1140px;
+  }
+
+  @media (--xxl) {
+    --container-mw: 1320px;
+  }
+}
+
+.container,
+.container-fluid {
+  width: 100%;
+  max-width: var(--container-mw, initial);
+  padding-right: calc(var(--gutter-x) * 0.5);
+  padding-left: calc(var(--gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}

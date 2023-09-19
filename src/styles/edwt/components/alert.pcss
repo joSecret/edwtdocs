@@ -1,0 +1,92 @@
+.alert {
+  position: relative;
+  padding: var(--alert-py, 1rem) var(--alert-px, 1rem);
+  margin-bottom: var(--alert-mb 1rem);
+  color: var(--alert-c, inherit);
+  background-color: color-mix(
+    in oklab,
+    var(--alert-bg, var(--alert-c)),
+    var(--c-white) var(--alert-bg-percentage, 90%)
+  );
+  border: var(
+    --alert-b,
+    1px solid
+      var(
+        --alert-bc,
+        color-mix(
+          in oklab,
+          var(--alert-c),
+          var(--c-white) var(--alert-bc-percentage, 5%)
+        )
+      )
+  );
+  border-radius: var(--alert-br, var(--br));
+
+  & a {
+    --link-color: var(
+      --alert-link-c,
+      color-mix(
+        in oklab,
+        var(--alert-c),
+        var(--c-black) var(--alert-link-c-percentage, 5%)
+      )
+    );
+
+    font-weight: var(--fw-bold); /* temp */
+
+    /* Docs style overwrite */
+    --sl-color-text-accent: var(
+      --alert-link-c,
+      color-mix(
+        in oklab,
+        var(--alert-c),
+        var(--c-black) var(--alert-link-c-percentage, 25%)
+      )
+    );
+    /* End Docs style overwrite */
+  }
+}
+
+.alert-heading {
+  color: inherit;
+}
+
+.alert-dismissible {
+  padding-right: 3rem;
+}
+
+.alert-dismissible .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1.25rem 1rem;
+}
+
+.alert-primary {
+  --alert-c: var(--c-primary);
+}
+
+.alert-secondary {
+  --alert-c: var(--c-secondary);
+}
+
+.alert-success {
+  --alert-c: var(--c-success);
+}
+
+.alert-info {
+  --alert-c: var(--c-info);
+}
+
+.alert-warning {
+  --alert-c: var(--c-warning);
+}
+
+.alert-danger {
+  --alert-c: var(--c-danger);
+}
+
+.alert-dark {
+  --alert-c: var(--c-dark);
+}
