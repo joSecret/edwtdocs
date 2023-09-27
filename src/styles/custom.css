@@ -55,3 +55,18 @@
 .header .caret {
   inset-inline-end: 0;
 }
+
+@media (min-width: 72rem) {
+  [data-has-sidebar] .main-pane {
+    --sl-content-margin-inline: auto !important;
+
+    width: calc(
+      var(--sl-content-width) +
+        (100% - var(--sl-content-width) - var(--sl-sidebar-width)) / 2
+    );
+  }
+
+  .right-sidebar-container {
+    width: var(--sl-sidebar-width);
+  }
+}

@@ -3,6 +3,7 @@ title: Badge
 description: ''
 ---
 import '../../../styles/edwt/components/badge.pcss.css';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 Badges scale to match the size of the immediate parent element by using relative font sizing and em units. As of v5, badges no longer have focus or hover styles for links.
 
@@ -10,7 +11,7 @@ Badges scale to match the size of the immediate parent element by using relative
 
 Pentru a folosi in Drupal e nevoie de adaugat libraria "badge".
 
-```TWIG
+```twig
 {{ attach_library('YOURTHEME/badge') }}
 ```
 
@@ -18,10 +19,95 @@ Pentru a folosi in Drupal e nevoie de adaugat libraria "badge".
 
 ### Headings
 
-<h1>Example heading <span class="badge bg-secondary">New</span></h1>
-<h2>Example heading <span class="badge bg-secondary">New</span></h2>
-<h3>Example heading <span class="badge bg-secondary">New</span></h3>
-<h4>Example heading <span class="badge bg-secondary">New</span></h4>
-<h5>Example heading <span class="badge bg-secondary">New</span></h5>
-<h6>Example heading <span class="badge bg-secondary">New</span></h6>
+<Tabs>
+	<TabItem label="Example">
+    <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+    <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+    <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+    <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+    <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+    <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+  </TabItem>
 
+	<TabItem label="HTML">
+    ```html
+    <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+    <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+    <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+    <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+    <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+    <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+    ```
+  </TabItem>
+</Tabs>
+
+### Background colors
+
+<Tabs>
+	<TabItem label="Example">
+    <span class="badge bg-primary">Primary</span>
+    <span class="badge bg-secondary">Secondary</span>
+    <span class="badge bg-success">Success</span>
+    <span class="badge bg-danger">Danger</span>
+    <span class="badge bg-warning text-dark">Warning</span>
+    <span class="badge bg-info text-dark">Info</span>
+    <span class="badge bg-light text-dark">Light</span>
+    <span class="badge bg-dark">Dark</span>
+  </TabItem>
+
+	<TabItem label="HTML">
+    ```html
+      <span class="badge bg-primary">Primary</span>
+      <span class="badge bg-secondary">Secondary</span>
+      <span class="badge bg-success">Success</span>
+      <span class="badge bg-danger">Danger</span>
+      <span class="badge bg-warning text-dark">Warning</span>
+      <span class="badge bg-info text-dark">Info</span>
+      <span class="badge bg-light text-dark">Light</span>
+      <span class="badge bg-dark">Dark</span>
+    ```
+  </TabItem>
+</Tabs>
+
+### Pill badges
+
+<Tabs>
+	<TabItem label="Example">
+    <span class="badge rounded-pill bg-primary">Primary</span>
+    <span class="badge rounded-pill bg-secondary">Secondary</span>
+    <span class="badge rounded-pill bg-success">Success</span>
+    <span class="badge rounded-pill bg-danger">Danger</span>
+    <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+    <span class="badge rounded-pill bg-info text-dark">Info</span>
+    <span class="badge rounded-pill bg-light text-dark">Light</span>
+    <span class="badge rounded-pill bg-dark">Dark</span>
+  </TabItem>
+
+	<TabItem label="HTML">
+    ```html
+  <!-- Primary badge -->
+  <span class="badge rounded-pill bg-primary">Primary</span>
+
+  <!-- Secondary badge -->
+  <span class="badge rounded-pill bg-secondary">Secondary</span>
+
+  <!-- Success badge -->
+  <span class="badge rounded-pill bg-success">Success</span>
+
+  <!-- Danger badge -->
+  <span class="badge rounded-pill bg-danger">Danger</span>
+
+  <!-- Warning badge -->
+  <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+
+  <!-- Info badge -->
+  <span class="badge rounded-pill bg-info text-dark">Info</span>
+
+  <!-- Light badge -->
+  <span class="badge rounded-pill bg-light text-dark">Light</span>
+
+  <!-- Dark badge -->
+  <span class="badge rounded-pill bg-dark">Dark</span>
+    ```
+  </TabItem>
+</Tabs>

@@ -5,39 +5,43 @@ description: A reference page in my new Starlight docs site.
 
 Eau de Web Theme color design system can help you create a color theme that reflects your brand or style.
 
+import Grid from "../../../components/docs/grid.astro";
+import ColorItem from "../../../components/docs/ColorItem.astro";
+
 ## Theme Colors
+
+<Grid maxWidth="132px">
+  <ColorItem cssVar="--c-primary" color="#109d12" />
+  <ColorItem cssVar="--c-secondary" color="#dee2e6" />
+  <ColorItem cssVar="--c-success" color="#198754" />
+  <ColorItem cssVar="--c-warning" color="#ffc107" />
+  <ColorItem cssVar="--c-info" color="#0dcaf0" />
+  <ColorItem cssVar="--c-danger" color="#dc3545" />
+</Grid>
+
 ## Gray
+
+<Grid maxWidth="132px">
+  <ColorItem cssVar="--c-gray-100" color="#f3f3f3" />
+  <ColorItem cssVar="--c-gray-200" color="#e9ecef" />
+  <ColorItem cssVar="--c-gray-300" color="#dee2e6" />
+  <ColorItem cssVar="--c-gray-400" color="#ccc" />
+  <ColorItem cssVar="--c-gray-500" color="#adb5bd" />
+  <ColorItem cssVar="--c-gray-600" color="#6c757d" />
+  <ColorItem cssVar="--c-gray-700" color="#333" />
+  <ColorItem cssVar="--c-gray-800" color="#151515" />
+  <ColorItem cssVar="--c-gray-900" color="#212529" />
+</Grid>
+
 ## Other
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+<Grid maxWidth="132px">
+  <ColorItem cssVar="--c-white" color="#ffffff" />
+  <ColorItem cssVar="--c-black" color="#000000" />
+  <ColorItem cssVar="--c-light" color="#f3f3f3" />
+  <ColorItem cssVar="--c-dark" color="#212529" />
+</Grid>
 
 :::note
-Starlight is a documentation website toolkit built with [Astro](https://astro.build/). You can get started with this command:
-
-```sh
-npm create astro@latest -- --template starlight
-```
-
+These variables are global
 :::
-
-:::tip[Did you know?]
-Astro helps you build faster websites with [“Islands Architecture”](https://docs.astro.build/en/concepts/islands/).
-:::
-
-<div class="not-content">
-	<p>Not impacted by Starlight’s default content styling.</p>
-</div>
-
-
-import { Tabs, TabItem } from '@astrojs/starlight/components';
-
-<Tabs>
-	<TabItem label="Demo HTML">
-test
-  </TabItem>
-	<TabItem label="Demo CSS">
-    ```css
-    npm create astro@latest -- --template starlight
-    ```
-  </TabItem>
-</Tabs>

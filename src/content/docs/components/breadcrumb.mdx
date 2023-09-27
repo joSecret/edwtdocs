@@ -1,9 +1,109 @@
 ---
 title: Breadcrumb
-description: ''
+description: ""
 ---
 
-Coming soon
+import "../../../styles/edwt/components/breadcrumb.pcss.css";
 
-## Example
+import { Tabs, TabItem } from "@astrojs/starlight/components";
 
+Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.
+
+Pentru a folosi in Drupal e nevoie de adaugat libraria "breadcrumb".
+
+```twig
+{{ attach_library('YOURTHEME/breadcrumb') }}
+```
+
+## Breadcrumb
+
+Use an ordered or unordered list with linked list items to create a minimally styled breadcrumb. Use our utilities to add additional styles as desired.
+
+<div class="not-content">
+  <Tabs>
+    <TabItem label="Design">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    </TabItem>
+    <TabItem label="HTML">
+      ```html
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      ```
+    </TabItem>
+
+  </Tabs>
+</div>
+
+## Dividers
+
+Dividers are automatically added in CSS through ::before and content. They can be changed by modifying a local CSS custom property --bs-breadcrumb-divider
+
+<div class="not-content">
+  <Tabs>
+    <TabItem label="Design">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Library
+          </li>
+        </ol>
+      </nav>
+    </TabItem>
+    <TabItem label="HTML">
+      ```html
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Library
+          </li>
+        </ol>
+      </nav>
+      ```
+    </TabItem>
+  </Tabs>
+</div>

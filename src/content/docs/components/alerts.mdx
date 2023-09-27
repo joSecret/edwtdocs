@@ -1,47 +1,55 @@
 ---
 title: Alerts
-description: ''
+description: "V - 1.0"
 ---
 
-import '../../../styles/edwt/components/alert.pcss';
-
+import "../../../styles/edwt/components/alert.pcss";
 
 Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
 
+:::tip[Did you know?]
+To use this component in the TWIG file it must be imported.
+
+```teminal
+@import([YOUR-THEME]/alerts)
+```
+
+:::
+
 ## Example
 
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from "@astrojs/starlight/components";
 
 <Tabs>
 	<TabItem label="Example">
     <div class="alert" role="alert">
       A simple primary alert—check it out! <a href="#">Link style</a>
     </div>
-    <div class="alert alert-primary" role="alert">
+    <div class="mt-3 alert alert-primary" role="alert">
       A simple primary alert—check it out! <a href="#">Link style</a>
     </div>
-    <div class="alert alert-secondary" role="alert">
+    <div class="mt-3 alert alert-secondary" role="alert">
       A simple secondary alert—check it out! <a href="#">Link style</a>
     </div>
-    <div class="alert alert-success" role="alert">
+    <div class="mt-3 alert alert-success" role="alert">
       A simple success alert—check it out! <a href="#">Link style</a>
     </div>
-    <div class="alert alert-danger" role="alert">
+    <div class="mt-3 alert alert-danger" role="alert">
       A simple danger alert—check it out! <a href="#">Link style</a>
     </div>
-    <div class="alert alert-warning" role="alert">
+    <div class="mt-3 alert alert-warning" role="alert">
       A simple warning alert—check it out! <a href="#">Link style</a>
     </div>
-    <div class="alert alert-info" role="alert">
+    <div class="mt-3 alert alert-info" role="alert">
       A simple info alert—check it out! <a href="#">Link style</a>
     </div>
-    <div class="alert alert-dark" role="alert">
+    <div class="mt-3 alert alert-dark" role="alert">
       A simple light alert—check it out! <a href="#">Link style</a>
     </div>
   </TabItem>
 
-	<TabItem label="HTML">
-    ```HTML
+  <TabItem label="HTML">
+    ```html
     <div class="alert" role="alert">
       A simple primary alert—check it out! <a href="#">Link style</a>
     </div>

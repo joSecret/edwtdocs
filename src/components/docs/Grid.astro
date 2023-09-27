@@ -1,0 +1,23 @@
+---
+type Propos = {
+  maxWidth: string;
+};
+
+// Need to user like var in css
+const { maxWidth } = Astro.props;
+const _grid_mw = maxWidth;
+---
+
+<div class="docs-grid not-content">
+  <slot />
+</div>
+
+<style define:vars={{ _grid_mw }}>
+  .docs-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,
+      minmax(var(--_grid_mw, 200px), 1fr)
+      );
+  }
+</style>

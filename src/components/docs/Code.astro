@@ -1,0 +1,15 @@
+---
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { Code } from 'astro/components';
+const content = await Astro.slots.render('default')
+---
+
+<Tabs>
+  <TabItem label="Design">
+    <slot />
+  </TabItem>
+
+  <TabItem label="HTML">
+    <Code code={content} lang="html" />
+  </TabItem>
+</Tabs>

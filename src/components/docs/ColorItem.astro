@@ -1,0 +1,37 @@
+---
+type Propos = {
+  color: string;
+  cssVar?: string;
+};
+
+const { color, cssVar } = Astro.props;
+---
+
+<div class="color-swatch not-content">
+  <div class="color-swatch-header" style=`background-color: var(${cssVar})`>
+  </div>
+  <div class="color-swatch-body">
+    <h5 class="color-swatch-body-label">{cssVar}</h5>
+    <p class="color-swatch-body-value">{color}</p>
+  </div>
+</div>
+
+<style>
+  .color-swatch-header {
+    height: 100px;
+    border-radius: 8px;
+  }
+
+  h5 {
+    font-size: 1.1em;
+  }
+
+  .color-swatch-body,
+  .color-swatch-body-value {
+    margin-top:8px;
+  }
+
+  .color-swatch-body {
+    padding-bottom: 1rem;
+  }
+</style>
