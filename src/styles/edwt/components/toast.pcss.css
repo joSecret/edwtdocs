@@ -8,7 +8,7 @@
   --toast-color: ;
   --toast-bg: rgba(255, 255, 255, 0.85);
   --toast-border-width: 1px;
-  --toast-border-color: var(--border-color-translucent);
+  --toast-border-color: var(--bc-translucent);
   --toast-border-radius: var(--br);
   --toast-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   --toast-header-color: var(--c-gray);

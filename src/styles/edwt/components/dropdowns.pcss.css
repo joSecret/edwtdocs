@@ -35,11 +35,11 @@
   --dropdown-font-size: 1rem;
   --dropdown-color: #212529;
   --dropdown-bg: #fff;
-  --dropdown-border-color: var(--border-color-translucent);
+  --dropdown-border-color: var(--bc-translucent);
   --dropdown-border-radius: var(--br);
   --dropdown-border-width: 1px;
   --dropdown-inner-border-radius: calc(var(--br) - 1px);
-  --dropdown-divider-bg: var(--border-color-translucent);
+  --dropdown-divider-bg: var(--bc-translucent);
   --dropdown-divider-margin-y: 0.5rem;
   --dropdown-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   --dropdown-link-color: #212529;
@@ -319,11 +319,11 @@
 .dropdown-menu-dark {
   --dropdown-color: #dee2e6;
   --dropdown-bg: #343a40;
-  --dropdown-border-color: var(--border-color-translucent);
+  --dropdown-border-color: var(--bc-translucent);
   --dropdown-box-shadow: ;
   --dropdown-link-color: #dee2e6;
   --dropdown-link-hover-color: #fff;
-  --dropdown-divider-bg: var(--border-color-translucent);
+  --dropdown-divider-bg: var(--bc-translucent);
   --dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
   --dropdown-link-active-color: #fff;
   --dropdown-link-active-bg: var(--c-primary);

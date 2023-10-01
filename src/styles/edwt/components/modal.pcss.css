@@ -5,7 +5,7 @@
   --modal-margin: 0.5rem;
   --modal-color: ;
   --modal-bg: #fff;
-  --modal-border-color: var(--border-color-translucent);
+  --modal-border-color: var(--bc-translucent);
   --modal-border-width: 1px;
   --modal-border-radius: 0.5rem;
   --modal-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -13,12 +13,12 @@
   --modal-header-padding-x: 1rem;
   --modal-header-padding-y: 1rem;
   --modal-header-padding: 1rem 1rem;
-  --modal-header-border-color: var(--border-color);
+  --modal-header-border-color: var(--bc);
   --modal-header-border-width: 1px;
   --modal-title-line-height: 1.5;
   --modal-footer-gap: 0.5rem;
   --modal-footer-bg: ;
-  --modal-footer-border-color: var(--border-color);
+  --modal-footer-border-color: var(--bc);
   --modal-footer-border-width: 1px;
   position: fixed;
   top: 0;
@@ -140,8 +140,11 @@
   border-top-right-radius: var(--modal-inner-border-radius);
 }
 .modal-header .btn-close {
-  padding: calc(var(--modal-header-padding-y) * 0.5) calc(var(--modal-header-padding-x) * 0.5);
-  margin: calc(-0.5 * var(--modal-header-padding-y)) calc(-0.5 * var(--modal-header-padding-x)) calc(-0.5 * var(--modal-header-padding-y)) auto;
+  padding: calc(var(--modal-header-padding-y) * 0.5)
+    calc(var(--modal-header-padding-x) * 0.5);
+  margin: calc(-0.5 * var(--modal-header-padding-y))
+    calc(-0.5 * var(--modal-header-padding-x))
+    calc(-0.5 * var(--modal-header-padding-y)) auto;
 }
 .modal-title {
   margin-bottom: 0;

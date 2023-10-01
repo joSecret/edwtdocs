@@ -3,8 +3,8 @@
   --a-color: var(--body-color);
   --a-bg: var(--body-bg);
   --a-transition: all 0.15s ease;
-  --a-border-color: var(--border-color);
-  --a-border-width: var(--border-width);
+  --a-border-color: var(--bc);
+  --a-border-width: var(--bw);
   --a-border-radius: var(--br);
   --a-inner-border-radius: calc(var(--a-border-radius) - var(--a-border-width));
   --a-btn-padding-x: 1rem;

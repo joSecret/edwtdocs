@@ -1,13 +1,22 @@
 ---
 title: Close Button
-description: ''
+description: "V - 1.0"
 ---
 
 A generic close button for dismissing content like modals and alerts.
 
-import '../../../styles/edwt/components/card.pcss.css';
+:::tip[Did you know?]
+To use this component in the TWIG file it must be imported.
 
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+```shell
+@import([YOUR-THEME]/close)
+```
+
+:::
+
+import "../../../styles/edwt/components/close.pcss";
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
 
 ## Example
 
@@ -15,8 +24,11 @@ Provide an option to dismiss or close a component with .btn-close. Default styli
 
 <Tabs>
   <TabItem label="Design">
-    <button type="button" class="btn-close" aria-label="Close"></button>
+    <div class="bg-light p-4">
+      <button type="button" class="btn-close" aria-label="Close"></button>
+    </div>
   </TabItem>
+
   <TabItem label="HTML">
     ```html
     <button type="button" class="btn-close" aria-label="Close"></button>
@@ -30,8 +42,11 @@ Disabled close buttons change their opacity. We’ve also applied pointer-events
 
 <Tabs>
   <TabItem label="Design">
-    <button type="button" class="btn-close" disabled aria-label="Close"></button>
+    <div class="bg-light p-4">
+      <button type="button" class="btn-close" disabled aria-label="Close"></button>
+    </div>
   </TabItem>
+
   <TabItem label="HTML">
     ```html
     <button type="button" class="btn-close" disabled aria-label="Close"></button>
@@ -40,17 +55,40 @@ Disabled close buttons change their opacity. We’ve also applied pointer-events
 </Tabs>
 
 ## White variant
+
 Change the default .btn-close to be white with the .btn-close-white class. This class uses the filter property to invert the background-image.
 
-<Tabs>
-  <TabItem label="Design">
-    <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
-    <button type="button" class="btn-close btn-close-white" disabled aria-label="Close"></button>
-  </TabItem>
-  <TabItem label="HTML">
-    ```html
-    <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
-    <button type="button" class="btn-close btn-close-white" disabled aria-label="Close"></button>
-    ```
-  </TabItem>
-</Tabs>
+<div class="not-content">
+  <Tabs>
+    <TabItem label="Design">
+      <div class="bg-primary p-4">
+        <button type="button" class="btn-close btn-close-white me-2" aria-label="Close"></button>
+        <button type="button" class="btn-close btn-close-white ms-2" disabled aria-label="Close"></button>
+      </div>
+    </TabItem>
+
+    <TabItem label="HTML">
+      ```html
+      <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+      <button type="button" class="btn-close btn-close-white" disabled aria-label="Close"></button>
+      ```
+    </TabItem>
+
+  </Tabs>
+</div>
+
+:::note
+The variables used for this component.
+
+| Name          | Default value | Info            |
+| ------------- | ------------- | --------------- |
+| --btn-c_s     | 14px          | Size            |
+| --btn-c_p     | 6px           | Padding         |
+| --btn-c_c     | var(--body-c) | Color           |
+| --btn-c_bg    | var(--body-c) | Background      |
+| --btn-c_bg--s | 14px          | Background Size |
+| --btn-c_o     | 1             | Opasity         |
+| --btn-c_br    | var(--br)     | Border radius   |
+| --btn-c_img   | svg image     | SVG Image       |
+
+:::

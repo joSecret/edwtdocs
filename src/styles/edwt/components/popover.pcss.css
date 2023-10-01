@@ -4,7 +4,7 @@
   --popover-font-size: 0.875rem;
   --popover-bg: #fff;
   --popover-border-width: 1px;
-  --popover-border-color: var(--border-color-translucent);
+  --popover-border-color: var(--bc-translucent);
   --popover-border-radius: 0.5rem;
   --popover-inner-border-radius: calc(0.5rem - 1px);
   --popover-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -53,13 +53,16 @@
 }
 .bs-popover-top > .popover-arrow,
 .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow {
-  bottom: calc(-1 * (var(--popover-arrow-height)) - var(--popover-border-width));
+  bottom: calc(
+    -1 * (var(--popover-arrow-height)) - var(--popover-border-width)
+  );
 }
 .bs-popover-top > .popover-arrow::before,
 .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::before,
 .bs-popover-top > .popover-arrow::after,
 .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::after {
-  border-width: var(--popover-arrow-height) calc(var(--popover-arrow-width) * 0.5) 0;
+  border-width: var(--popover-arrow-height)
+    calc(var(--popover-arrow-width) * 0.5) 0;
 }
 .bs-popover-top > .popover-arrow::before,
 .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::before {
@@ -81,7 +84,8 @@
 .bs-popover-auto[data-popper-placement^="right"] > .popover-arrow::before,
 .bs-popover-end > .popover-arrow::after,
 .bs-popover-auto[data-popper-placement^="right"] > .popover-arrow::after {
-  border-width: calc(var(--popover-arrow-width) * 0.5) var(--popover-arrow-height) calc(var(--popover-arrow-width) * 0.5) 0;
+  border-width: calc(var(--popover-arrow-width) * 0.5)
+    var(--popover-arrow-height) calc(var(--popover-arrow-width) * 0.5) 0;
 }
 .bs-popover-end > .popover-arrow::before,
 .bs-popover-auto[data-popper-placement^="right"] > .popover-arrow::before {
@@ -101,7 +105,8 @@
 .bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow::before,
 .bs-popover-bottom > .popover-arrow::after,
 .bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow::after {
-  border-width: 0 calc(var(--popover-arrow-width) * 0.5) var(--popover-arrow-height);
+  border-width: 0 calc(var(--popover-arrow-width) * 0.5)
+    var(--popover-arrow-height);
 }
 .bs-popover-bottom > .popover-arrow::before,
 .bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow::before {
@@ -134,7 +139,8 @@
 .bs-popover-auto[data-popper-placement^="left"] > .popover-arrow::before,
 .bs-popover-start > .popover-arrow::after,
 .bs-popover-auto[data-popper-placement^="left"] > .popover-arrow::after {
-  border-width: calc(var(--popover-arrow-width) * 0.5) 0 calc(var(--popover-arrow-width) * 0.5) var(--popover-arrow-height);
+  border-width: calc(var(--popover-arrow-width) * 0.5) 0
+    calc(var(--popover-arrow-width) * 0.5) var(--popover-arrow-height);
 }
 .bs-popover-start > .popover-arrow::before,
 .bs-popover-auto[data-popper-placement^="left"] > .popover-arrow::before {

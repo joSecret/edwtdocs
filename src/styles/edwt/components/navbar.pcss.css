@@ -106,7 +106,7 @@
   line-height: 1;
   color: var(--navbar-color);
   background-color: transparent;
-  border: var(--border-width) solid var(--navbar-toggler-border-color);
+  border: var(--bw) solid var(--navbar-toggler-border-color);
   border-radius: var(--navbar-toggler-border-radius);
   transition: var(--navbar-toggler-transition);
 }

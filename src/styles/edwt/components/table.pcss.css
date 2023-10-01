@@ -1,7 +1,7 @@
 .table {
   --table-color: var(--body-color);
   --table-bg: transparent;
-  --table-border-color: var(--border-color);
+  --table-border-color: var(--bc);
   --table-accent-bg: transparent;
   --table-striped-color: var(--body-color);
   --table-striped-bg: rgba(0, 0, 0, 0.05);

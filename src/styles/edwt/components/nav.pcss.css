@@ -2,10 +2,10 @@
 .nav {
   --nav-link-padding-x: 1rem;
   --nav-link-padding-y: .5rem;
-  --nav-link-font-size: var(--base-font-size);
-  --nav-link-font-weight: var(--base-font-weight);
-  --nav-link-color: var(--link-color);
-  --nav-link-hover-color: var(--link-color-h);
+  --nav-link-font-size: var(--fs-base);
+  --nav-link-font-weight: var(--fw-base);
+  --nav-link-color: var(--link-c);
+  --nav-link-hover-color: var(--link-c-h);
   --nav-link-disabled-color: var(--c-gray-600);
 
   display: flex;
@@ -40,8 +40,8 @@
 
 /* Tabs */
 .nav-tabs {
-  --nav-tabs-border-width: var(--border-width);
-  --nav-tabs-border-color: var(--border-color);
+  --nav-tabs-border-width: var(--bw);
+  --nav-tabs-border-color: var(--bc);
   --nav-tabs-border-radius: var(--br);
   --nav-tabs-link-hover-border-color: var(--c-gray-200) var(--c-gray-200) var(--nav-tabs-border-color);
   --nav-tabs-link-active-color: var(--c-gray-700);

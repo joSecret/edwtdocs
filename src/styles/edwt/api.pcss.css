@@ -22,31 +22,31 @@
 }
 
 .border {
-  border: var(--border-width) var(--border-style) var(--border-color);
+  border: var(--bw) var(--bs) var(--bc);
 }
 .border-0 {
   border: 0;
 }
 .border-top {
-  border-top: var(--border-width) var(--border-style) var(--border-color);
+  border-top: var(--bw) var(--bs) var(--bc);
 }
 .border-top-0 {
   border-top: 0;
 }
 .border-end {
-  border-right: var(--border-width) var(--border-style) var(--border-color);
+  border-right: var(--bw) var(--bs) var(--bc);
 }
 .border-end-0 {
   border-right: 0;
 }
 .border-bottom {
-  border-bottom: var(--border-width) var(--border-style) var(--border-color);
+  border-bottom: var(--bw) var(--bs) var(--bc);
 }
 .border-bottom-0 {
   border-bottom: 0;
 }
 .border-start {
-  border-left: var(--border-width) var(--border-style) var(--border-color);
+  border-left: var(--bw) var(--bs) var(--bc);
 }
 .border-start-0 {
   border-left: 0;
@@ -89,19 +89,19 @@
 }
 
 .border-1 {
-  --border-width: 1px;
+  --bw: 1px;
 }
 .border-2 {
-  --border-width: 2px;
+  --bw: 2px;
 }
 .border-3 {
-  --border-width: 3px;
+  --bw: 3px;
 }
 .border-4 {
-  --border-width: 4px;
+  --bw: 4px;
 }
 .border-5 {
-  --border-width: 5px;
+  --bw: 5px;
 }
 
 .w-100 {
