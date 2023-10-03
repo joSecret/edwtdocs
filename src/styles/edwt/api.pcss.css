@@ -1,5 +1,6 @@
 /* Margin and padding */
 @import "api/bg.pcss";
+@import "api/text.pcss";
 @import "api/shadow.pcss";
 @import "api/display.pcss";
 @import "api/padding_margin.pcss";
@@ -327,116 +328,6 @@
 }
 .lh-lg {
   line-height: 2;
-}
-
-.text-start {
-  text-align: left;
-}
-.text-end {
-  text-align: right;
-}
-.text-center {
-  text-align: center;
-}
-.text-decoration-none {
-  text-decoration: none;
-}
-.text-decoration-underline {
-  text-decoration: underline;
-}
-.text-decoration-line-through {
-  text-decoration: line-through;
-}
-.text-lowercase {
-  text-transform: lowercase;
-}
-.text-uppercase {
-  text-transform: uppercase;
-}
-.text-capitalize {
-  text-transform: capitalize;
-}
-.text-wrap {
-  white-space: normal;
-}
-.text-nowrap {
-  white-space: nowrap;
-}
-.text-break {
-  word-wrap: break-word;
-  word-break: break-word;
-}
-.text-primary {
-  --text-opacity: 1;
-  color: rgba(var(--primary-rgb), var(--text-opacity));
-}
-.text-secondary {
-  --text-opacity: 1;
-  color: rgba(var(--secondary-rgb), var(--text-opacity));
-}
-.text-success {
-  --text-opacity: 1;
-  color: rgba(var(--success-rgb), var(--text-opacity));
-}
-.text-info {
-  --text-opacity: 1;
-  color: rgba(var(--info-rgb), var(--text-opacity));
-}
-.text-warning {
-  --text-opacity: 1;
-  color: rgba(var(--warning-rgb), var(--text-opacity));
-}
-.text-danger {
-  --text-opacity: 1;
-  color: rgba(var(--danger-rgb), var(--text-opacity));
-}
-.text-light {
-  --text-opacity: 1;
-  color: rgba(var(--light-rgb), var(--text-opacity));
-}
-.text-dark {
-  --text-opacity: 1;
-  color: rgba(var(--dark-rgb), var(--text-opacity));
-}
-.text-black {
-  --text-opacity: 1;
-  color: rgba(var(--black-rgb), var(--text-opacity));
-}
-.text-white {
-  --text-opacity: 1;
-  color: rgba(var(--white-rgb), var(--text-opacity));
-}
-.text-body {
-  --text-opacity: 1;
-  color: rgba(var(--body-color-rgb), var(--text-opacity));
-}
-.text-muted {
-  --text-opacity: 1;
-  color: var(--c-gray);
-}
-.text-black-50 {
-  --text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5);
-}
-.text-white-50 {
-  --text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5);
-}
-.text-reset {
-  --text-opacity: 1;
-  color: inherit;
-}
-.text-opacity-25 {
-  --text-opacity: 0.25;
-}
-.text-opacity-50 {
-  --text-opacity: 0.5;
-}
-.text-opacity-75 {
-  --text-opacity: 0.75;
-}
-.text-opacity-100 {
-  --text-opacity: 1;
 }
 
 .user-select-all {

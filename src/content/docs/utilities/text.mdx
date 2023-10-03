@@ -1,39 +1,118 @@
 ---
 title: Text
-description: ''
+description: "V - 1.0"
 ---
 
-Coming soon
+import { Tabs, TabItem } from "@astrojs/starlight/components";
 
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states, too.
 
-## Example
+:::tip[Did you know?]
+Accessibility tip: Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies like screen readers. Please ensure the meaning is obvious from the content itself (e.g., the visible text with a sufficient color contrast) or is included through alternative means, such as additional text hidden with the .visually-hidden class.
+:::
+
+:::note
+file with classe is in
+`[main-doc-folder]/api/text.pcss`
+in final this file is imported in
+`[main-doc-folder]/api.pcss`
+:::
+
+## Text color
 
 <Tabs>
-	<TabItem label="Demo HTML">
-    <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
-    <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
-    <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
-    <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
-    <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
-    <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
-    <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
-    <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
-    <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
-    <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+  <TabItem label="Example">
+    <div class="text-body">.text-body</div>
+    <div class="text-muted">.text-muted</div>
+    <div class="text-primary">.text-primary</div>
+    <div class="text-success">.text-success</div>
+    <div class="text-danger">.text-danger</div>
+    <div class="text-warning">.text-warning</div>
+    <div class="text-info">.text-info</div>
+    <div class="text-dark">.text-dark</div>
+    <div class="text-black">.text-black</div>
+    <div class="text-black-50">.text-black-50</div>
+
+    <div class="bg-dark p-4">
+      <div class="text-white">.text-white</div>
+      <div class="text-secondary">.text-secondary</div>
+      <div class="text-light">.text-light</div>
+      <div class="text-white-50">.text-white-50</div>
+    </div>
+
   </TabItem>
-	<TabItem label="Demo CSS">
-    ```css
-    <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
-    <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
-    <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
-    <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
-    <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
-    <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
-    <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
-    <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
-    <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
-    <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+
+  <TabItem label="HTML">
+    ```html
+    <div class="text-body">.text-body</div>
+    <div class="text-muted">.text-muted</div>
+    <div class="text-primary">.text-primary</div>
+    <div class="text-success">.text-success</div>
+    <div class="text-danger">.text-danger</div>
+    <div class="text-warning">.text-warning</div>
+    <div class="text-info">.text-info</div>
+    <div class="text-dark">.text-dark</div>
+    <div class="text-black">.text-black</div>
+    <div class="text-black-50">.text-black-50</div>
+
+    <div class="bg-dark p-4">
+      <div class="text-white">.text-white</div>
+      <div class="text-secondary">.text-secondary</div>
+      <div class="text-light">.text-light</div>
+      <div class="text-white-50">.text-white-50</div>
+    </div>
     ```
+
   </TabItem>
 </Tabs>
+
+## Text aligment
+
+<Tabs>
+  <TabItem label="Example">
+    <div class="text-start">.text-start</div>
+    <div class="text-end">.text-end</div>
+    <div class="text-center">.text-center</div>
+  </TabItem>
+
+  <TabItem label="HTML">
+    ```html
+    <div class="text-start">.text-start</div>
+    <div class="text-end">.text-end</div>
+    <div class="text-center">.text-center</div>
+    ```
+
+  </TabItem>
+</Tabs>
+
+## Other styles
+
+<Tabs>
+  <TabItem label="Example">
+    <div class="text-lowercase">.text-lowercase</div>
+    <div class="text-uppercase">.text-uppercase</div>
+    <div class="text-capitalize">.text-capitalize</div>
+    <div class="text-wrap">.text-wrap</div>
+    <div class="text-nowrap">.text-nowrap</div>
+    <div class="text-break">.text-break</div>
+  </TabItem>
+
+  <TabItem label="HTML">
+    ```html
+    <div class="text-lowercase">.text-lowercase</div>
+    <div class="text-uppercase">.text-uppercase</div>
+    <div class="text-capitalize">.text-capitalize</div>
+    <div class="text-lowercase">.text-lowercase</div>
+    <div class="text-uppercase">.text-uppercase</div>
+    <div class="text-capitalize">.text-capitalize</div>
+    <div class="text-wrap">.text-wrap</div>
+    <div class="text-nowrap">.text-nowrap</div>
+    <div class="text-break">.text-break</div>
+    ```
+
+  </TabItem>
+</Tabs>
+
+:::note
+Text has no variables, it uses the basic color variables.
+:::

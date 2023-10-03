@@ -1,16 +1,27 @@
 ---
 title: Background
-description: ''
+description: "V - 1.0"
 ---
 
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from "@astrojs/starlight/components";
 
-Coming soon
+Convey meaning through background-color
+
+:::tip[Did you know?]
+Accessibility tip: Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies like screen readers. Please ensure the meaning is obvious from the content itself (e.g., the visible text with a sufficient color contrast) or is included through alternative means, such as additional text hidden with the .visually-hidden class.
+:::
+
+:::note
+file with classe is in
+`[main-doc-folder]/api/bg.pcss`
+in final this file is imported in
+`[main-doc-folder]/api.pcss`
+:::
 
 ## Example
 
 <Tabs>
-	<TabItem label="Demo HTML">
+  <TabItem label="Example">
     <div class="p-3 bg-primary text-white">.bg-primary</div>
     <div class="p-3 bg-secondary text-white">.bg-secondary</div>
     <div class="p-3 bg-success text-white">.bg-success</div>
@@ -19,21 +30,29 @@ Coming soon
     <div class="p-3 bg-info text-white">.bg-info</div>
     <div class="p-3 bg-light text-dark">.bg-light</div>
     <div class="p-3 bg-dark text-white">.bg-dark</div>
-    <div class="p-3 bg-white text-dark">.bg-white</div>
-    <div class="p-3 bg-transparent text-dark">.bg-transparent</div>
+
+    <div class="bg-dark p-4">
+      <div class="p-3 bg-white text-dark">.bg-white</div>
+    </div>
+
   </TabItem>
-	<TabItem label="Demo CSS">
-    ```css
-    <div class="p-3 bg-primary text-white">.bg-primary</div>
-    <div class="p-3 bg-secondary text-white">.bg-secondary</div>
-    <div class="p-3 bg-success text-white">.bg-success</div>
-    <div class="p-3 bg-danger text-white">.bg-danger</div>
-    <div class="p-3 bg-warning text-dark">.bg-warning</div>
-    <div class="p-3 bg-info text-white">.bg-info</div>
-    <div class="p-3 bg-light text-dark">.bg-light</div>
-    <div class="p-3 bg-dark text-white">.bg-dark</div>
-    <div class="p-3 bg-white text-dark">.bg-white</div>
-    <div class="p-3 bg-transparent text-dark">.bg-transparent</div>
+
+  <TabItem label="HTML">
+    ```html
+    <div class="bg-primary text-white">.bg-primary</div>
+    <div class="bg-secondary text-white">.bg-secondary</div>
+    <div class="bg-success text-white">.bg-success</div>
+    <div class="bg-danger text-white">.bg-danger</div>
+    <div class="bg-warning text-dark">.bg-warning</div>
+    <div class="bg-info text-white">.bg-info</div>
+    <div class="bg-light text-dark">.bg-light</div>
+    <div class="bg-dark text-white">.bg-dark</div>
+    <div class="bg-white text-dark">.bg-white</div>
+    <div class="bg-transparent text-dark">.bg-transparent</div>
     ```
   </TabItem>
 </Tabs>
+
+:::note
+Background has no variables, it uses the basic color variables.
+:::
