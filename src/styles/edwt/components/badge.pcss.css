@@ -1,19 +1,14 @@
-.badge {
-  --badge-px: 0.65em;
-  --badge-py: 0.35em;
-  --badge-fs: 0.75em;
-  --badge-fw: 700;
-  --badge-c: #fff;
-
+:where(.badge) {
   display: inline-block;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  padding: var(--badge-py) var(--badge-px);
-  font-size: var(--badge-fs);
-  font-weight: var(--badge-fw);
-  color: var(--badge-c);
+
+  padding: var(--badge-py, 0.35em) var(--badge-px, 0.65em);
+  font-size: var(--badge-fs, 0.75em);
+  font-weight: var(--badge-fw, var(--fw-medium));
+  color: var(--badge-c, var(--c-white));
   border-radius: var(--badge-br, var(--br));
 
   &:empty {
