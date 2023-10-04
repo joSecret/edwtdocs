@@ -1,12 +1,22 @@
 ---
 title: Changelog
-description: ''
+description: ""
 ---
+
+import Changelog from "../../../components/docs/Changelog.astro";
 
 Stay up to date with all of the latest additions and improvements we've made to theme.
 
-import { Image } from 'astro:assets';
+<Changelog version="v1.0.1" date="08.10.2023">
+  #### Improvement in Docs
 
-import example from '../../../images/changelog.png';
+  <ul>
+    <li>Updated with Semantics HTML 5</li>
+    <li>Components added in Docs</li>
+    <li>Improvised Documents</li>
+  </ul>
+</Changelog>
 
-<Image src={example} alt="Changelog example."/>
+<Changelog tag="true" version="v1.0.0" date="08.10.2023">
+  #### Initial Release EDWT Docs
+</Changelog>

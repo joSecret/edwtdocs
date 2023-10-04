@@ -1,0 +1,59 @@
+---
+type Propos = {
+  tag?: boolean;
+  version: string;
+  date: string;
+};
+
+const { tag, version, date } = Astro.props;
+---
+
+<div class="changelog">
+  <div class="sidebar-left">
+    <span class="version">{version}</span>
+     -
+    <span class="date">{date}</span>
+  </div>
+
+  <div class="sidebar-right">
+    {tag && <div class="tag-new">New</div>}
+
+    <slot />
+  </div>
+</div>
+
+<style>
+  .changelog {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--sl-color-hairline);
+  }
+
+  .sidebar-left {
+    font-size: 1.3125em;
+    font-weight: bold;
+  }
+
+  .version {
+    color: var(--sl-color-accent);
+  }
+
+  .tag-new {
+    border-radius: 0.25em;
+    color: var(--sl-color-text-invert);
+    background: var(--sl-color-accent);
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 1;
+    padding: 3px 6px;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+
+  .sidebar-left + .sidebar-right {
+    margin-top: 0;
+  }
+</style>

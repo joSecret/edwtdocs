@@ -17,6 +17,7 @@ To use this component in the TWIG file it must be imported.
 ```twig
 {{ attach_library('YOURTHEME/breadcrumb') }}
 ```
+
 :::
 
 ## Breadcrumb
@@ -111,3 +112,18 @@ Dividers are automatically added in CSS through ::before and content. They can b
     </TabItem>
   </Tabs>
 </div>
+
+:::note
+The variables used for this component.
+Can be used outside the tag "breadcrumb" without
+
+| Name       | Default value    | Info                          |
+| ---------- | ---------------- | ----------------------------- |
+| --badge-py | 0.35em           | Padding block (Top & Bottom)  |
+| --badge-px | 0.65em           | Padding inline (Right & Left) |
+| --badge-fs | 0.75em           | Font size                     |
+| --badge-fw | var(--fw-medium) | Text color                    |
+| --badge-c  | var(--c-white)   | Border color                  |
+| --badge-br | var(--br)        | Border radius                 |
+
+:::

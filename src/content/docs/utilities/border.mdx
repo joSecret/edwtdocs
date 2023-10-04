@@ -1,9 +1,250 @@
 ---
-title: Borders
-description: ''
+title: Border
+description: "V - 1.0"
 ---
 
-Coming soon
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.
+
+:::note
+file with classe is in
+`[main-doc-folder]/api/border.pcss`
+in final this file is imported in
+`[main-doc-folder]/api.pcss`
+:::
 
 ## Example
 
+<div class="not-content">
+  <Tabs>
+    <TabItem label="Example">
+      <div class="mb-4">
+        <input type="email" class="form-control border border-success" id="exampleFormControlInput1" placeholder="name@example.com" />
+      </div>
+
+      <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">Dangerous heading</div>
+
+      <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">Changing border color and width</div>
+    </TabItem>
+
+    <TabItem label="HTML">
+      ```html
+      <div class="mb-4">
+        <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+
+      <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+        Dangerous heading
+      </div>
+
+      <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+        Changing border color and width
+      </div>
+      ```
+    </TabItem>
+
+  </Tabs>
+</div>
+
+## Additive
+
+Add borders to custom elements:
+
+<div class="not-content">
+  <Tabs>
+    <TabItem label="Example">
+      <div class="d-flex gap-4">
+        <div style="width: 100px; height: 100px" class="border"></div>
+        <div style="width: 100px; height: 100px" class="border-top"></div>
+        <div style="width: 100px; height: 100px" class="border-end"></div>
+        <div style="width: 100px; height: 100px" class="border-bottom"></div>
+        <div style="width: 100px; height: 100px" class="border-start"></div>
+      </div>
+    </TabItem>
+
+    <TabItem label="HTML">
+      ```html
+      <div class="border"></div>
+      <div class="border-top"></div>
+      <div class="border-end"></div>
+      <div class="border-bottom"></div>
+      <div class="border-start"></div>
+      ```
+    </TabItem>
+
+  </Tabs>
+</div>
+
+## Subtractive
+
+Or remove borders:
+
+<div class="not-content">
+  <Tabs>
+    <TabItem label="Example">
+      <div class="d-flex gap-4">
+        <div style="width: 100px; height: 100px" class="border border-0"></div>
+        <div style="width: 100px; height: 100px" class="border border-top-0"></div>
+        <div style="width: 100px; height: 100px" class="border border-end-0"></div>
+        <div style="width: 100px; height: 100px" class="border border-bottom-0"></div>
+        <div style="width: 100px; height: 100px" class="border border-start-0"></div>
+      </div>
+    </TabItem>
+
+    <TabItem label="HTML">
+      ```html
+      <div class="border border-0"></div>
+      <div class="border border-top-0"></div>
+      <div class="border border-end-0"></div>
+      <div class="border border-bottom-0"></div>
+      <div class="border border-start-0"></div>
+      ```
+    </TabItem>
+
+  </Tabs>
+</div>
+
+## Border color
+
+Change the border color using utilities built on our theme colors.
+
+<div class="not-content">
+  <Tabs>
+    <TabItem label="Example">
+      <div class="d-flex flex-wrap gap-4">
+        <div style="width: 100px; height: 100px" class="border border-primary"></div>
+        <div style="width: 100px; height: 100px" class="border border-secondary"></div>
+        <div style="width: 100px; height: 100px" class="border border-success"></div>
+        <div style="width: 100px; height: 100px" class="border border-danger"></div>
+        <div style="width: 100px; height: 100px" class="border border-warning"></div>
+        <div style="width: 100px; height: 100px" class="border border-info"></div>
+        <div style="width: 100px; height: 100px" class="border border-light"></div>
+        <div style="width: 100px; height: 100px" class="border border-dark"></div>
+        <div class="bg-light p-3" style="width: 100px; height: 100px">
+          <div style="width: 68px; height: 68px" class="border border-white"></div>
+        </div>
+      </div>
+    </TabItem>
+
+    <TabItem label="HTML">
+      ```html
+      <div class="border border-primary"></div>
+      <div class="border border-secondary"></div>
+      <div class="border border-success"></div>
+      <div class="border border-danger"></div>
+      <div class="border border-warning"></div>
+      <div class="border border-info"></div>
+      <div class="border border-light"></div>
+      <div class="border border-dark"></div>
+      <div class="border border-white"></div>
+      ```
+    </TabItem>
+
+  </Tabs>
+</div>
+
+## Width
+
+<div class="not-content">
+  <Tabs>
+    <TabItem label="Example">
+      <div class="d-flex flex-wrap gap-4">
+        <div style="width: 100px; height: 100px" class="border border-1"></div>
+        <div style="width: 100px; height: 100px" class="border border-2"></div>
+        <div style="width: 100px; height: 100px" class="border border-3"></div>
+        <div style="width: 100px; height: 100px" class="border border-4"></div>
+        <div style="width: 100px; height: 100px" class="border border-5"></div>
+      </div>
+    </TabItem>
+
+    <TabItem label="HTML">
+      ```html
+      <div class="border border-1"></div>
+      <div class="border border-2"></div>
+      <div class="border border-3"></div>
+      <div class="border border-4"></div>
+      <div class="border border-5"></div>
+      ```
+    </TabItem>
+
+  </Tabs>
+</div>
+
+## Radius
+
+Add classes to an element to easily round its corners.
+
+<div class="not-content">
+  <Tabs>
+    <TabItem label="Example">
+      <div class="d-flex flex-wrap gap-4">
+        <div style="width: 75px; height: 75px" class="bg-dark rounded"></div>
+        <div style="width: 75px; height: 75px" class="bg-dark rounded-top"></div>
+        <div style="width: 75px; height: 75px" class="bg-dark rounded-end"></div>
+        <div style="width: 75px; height: 75px" class="bg-dark rounded-bottom"></div>
+        <div style="width: 75px; height: 75px" class="bg-dark rounded-start"></div>
+        <div style="width: 75px; height: 75px" class="bg-dark rounded-circle"></div>
+        <div style="width: 150px; height: 75px" class="bg-dark rounded-pill"></div>
+      </div>
+    </TabItem>
+
+    <TabItem label="HTML">
+      ```html
+        <div class="bg-dark rounded"></div>
+        <div class="bg-dark rounded-top"></div>
+        <div class="bg-dark rounded-end"></div>
+        <div class="bg-dark rounded-bottom"></div>
+        <div class="bg-dark rounded-start"></div>
+        <div class="bg-dark rounded-circle"></div>
+        <div class="bg-dark rounded-pill"></div>
+      ```
+    </TabItem>
+
+  </Tabs>
+</div>
+
+## Sizes
+
+Use the scaling classes for larger or smaller rounded corners. Sizes range from 0 to 5, and can be configured by modifying the utilities API.
+
+<div class="not-content">
+  <Tabs>
+    <TabItem label="Example">
+      <div class="d-flex flex-wrap gap-4">
+        <div style="width: 75px; height: 75px" class="bg-dark rounded-0"></div>
+        <div style="width: 75px; height: 75px" class="bg-dark rounded-1"></div>
+        <div style="width: 75px; height: 75px" class="bg-dark rounded-2"></div>
+        <div style="width: 75px; height: 75px" class="bg-dark rounded-3"></div>
+        <div style="width: 75px; height: 75px" class="bg-dark rounded-4"></div>
+      </div>
+    </TabItem>
+
+    <TabItem label="HTML">
+      ```html
+      <div class="rounded-0"></div>
+      <div class="rounded-1"></div>
+      <div class="rounded-2"></div>
+      <div class="rounded-3"></div>
+      <div class="rounded-4"></div>
+      ```
+    </TabItem>
+
+  </Tabs>
+</div>
+
+:::note
+The variables used for this component.
+
+| Name      | Default value     | Info                      |
+| --------- | ----------------- | ------------------------- |
+| --bw      | 1px               | Border width              |
+| --bs      | var(--c-gray-300) | Border size               |
+| --bc      | solid             | Border color              |
+| --br      | 0.375rem          | Border radius             |
+| --br-sm   | 0.25rem           | Border radius small       |
+| --br-lg   | 0.5rem            | Border radius large       |
+| --br-xl   | 1rem              | Border radius extra large |
+| --br-pill | 100rem            | Border radius pill        |
+
+:::
