@@ -50,10 +50,10 @@
   /* Heading */
   --h-mb: 0.5rem;
   --h-ff: inherit;
-  --h-fstyle: null;
+  --h-fstyle: inherit;
   --h-fw: 500;
   --h-lh: 1.2;
-  --h-c: null;
+  --h-c: inherit;
 
   --fs-h1: 2.5rem;
   --fs-h2: 2rem;

@@ -1,57 +1,73 @@
 ---
 title: Card
-description: ''
+description: ""
 ---
 
 Geek's cards provide a flexible and extensible content container with multiple variants and options.
 
-import '../../../styles/edwt/components/card.pcss.css';
+import "../../../styles/edwt/components/card.pcss.css";
 
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from "@astrojs/starlight/components";
 
 ## Basic Example
 
 <Tabs>
   <TabItem label="Design">
     <div class="card" style="width: 20rem;">
-      <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="" />
+      <img
+        src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+        class="card-img-top"
+        alt=""
+      />
       <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-         <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-   </div>
-  </TabItem>
-  <TabItem label="HTML">
-    ```html
-    <div class="card" style="width: 20rem;">
-      <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="" />
-      <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-         <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-   </div>
-    ```
-  </TabItem>
-</Tabs>
-
-## Card Body
-The building block of a card is the .card-body. Use it whenever you need a padded section within a card.
-<Tabs>
-  <TabItem label="Design">
-    <div class="card">
-      <div class="card-body">
-        This is some text within a card body.
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">
+          Go somewhere
+        </a>
       </div>
     </div>
   </TabItem>
   <TabItem label="HTML">
     ```html
-    <div class="card">
+    <div class="card" style="width: 20rem;">
+      <img
+        src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+        class="card-img-top"
+        alt=""
+      />
       <div class="card-body">
-        This is some text within a card body.
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">
+          Go somewhere
+        </a>
       </div>
+    </div>
+    ```
+  </TabItem>
+</Tabs>
+
+## Card Body
+
+The building block of a card is the .card-body. Use it whenever you need a padded section within a card.
+
+<Tabs>
+  <TabItem label="Design">
+    <div class="card">
+      <div class="card-body">This is some text within a card body.</div>
+    </div>
+  </TabItem>
+  <TabItem label="HTML">
+    ```html
+    <div class="card">
+      <div class="card-body">This is some text within a card body.</div>
     </div>
     ```
   </TabItem>
@@ -59,9 +75,9 @@ The building block of a card is the .card-body. Use it whenever you need a padde
 
 ## Titles, text, and links
 
-Card titles are used by adding .card-title to a ```<h*>``` tag. In the same way, links are added and placed next to each other by adding .card-link to an ```<a>``` tag.
+Card titles are used by adding .card-title to a `<h*>` tag. In the same way, links are added and placed next to each other by adding .card-link to an `<a>` tag.
 
-Subtitles are used by adding a .card-subtitle to a ```<h*>``` tag. If the .card-title and the .card-subtitle items are placed in a .card-body item, the card title and subtitle are aligned nicely.
+Subtitles are used by adding a .card-subtitle to a `<h*>` tag. If the .card-title and the .card-subtitle items are placed in a .card-body item, the card title and subtitle are aligned nicely.
 
 <Tabs>
   <TabItem label="Design">
@@ -69,10 +85,19 @@ Subtitles are used by adding a .card-subtitle to a ```<h*>``` tag. If the .card-
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-        <a href="#" class="card-link">Another link</a>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="card-link">
+          Card link
+        </a>
+        <a href="#" class="card-link">
+          Another link
+        </a>
+        <a href="#" class="card-link">
+          Another link
+        </a>
       </div>
     </div>
   </TabItem>
@@ -82,9 +107,16 @@ Subtitles are used by adding a .card-subtitle to a ```<h*>``` tag. If the .card-
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="card-link">
+          Card link
+        </a>
+        <a href="#" class="card-link">
+          Another link
+        </a>
       </div>
     </div>
     ```
@@ -98,40 +130,62 @@ Mix and match multiple content types to create the card you need, or throw every
 <Tabs>
   <TabItem label="Design">
     <div class="card" style="width: 20rem;">
-      <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="rounded" alt="..." />
+      <img
+        src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+        class="rounded"
+        alt="..."
+      />
       <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
       </div>
       <ul class="list-group list-group-flush">
-         <li class="list-group-item">Cras justo odio</li>
-         <li class="list-group-item">Dapibus ac facilisis in</li>
-         <li class="list-group-item">Vestibulum at eros</li>
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Vestibulum at eros</li>
       </ul>
       <div class="card-body">
-         <a href="#" class="card-link">Card link</a>
-         <a href="#" class="card-link">Another link</a>
+        <a href="#" class="card-link">
+          Card link
+        </a>
+        <a href="#" class="card-link">
+          Another link
+        </a>
       </div>
-   </div>
+    </div>
   </TabItem>
   <TabItem label="HTML">
     ```html
     <div class="card" style="width: 20rem;">
-      <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="rounded" alt="..." />
+      <img
+        src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+        class="rounded"
+        alt="..."
+      />
       <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
       </div>
       <ul class="list-group list-group-flush">
-         <li class="list-group-item">Cras justo odio</li>
-         <li class="list-group-item">Dapibus ac facilisis in</li>
-         <li class="list-group-item">Vestibulum at eros</li>
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Vestibulum at eros</li>
       </ul>
       <div class="card-body">
-         <a href="#" class="card-link">Card link</a>
-         <a href="#" class="card-link">Another link</a>
+        <a href="#" class="card-link">
+          Card link
+        </a>
+        <a href="#" class="card-link">
+          Another link
+        </a>
       </div>
-   </div>
+    </div>
     ```
   </TabItem>
 </Tabs>
@@ -143,26 +197,30 @@ Add an optional header and/or footer within a card.
 <Tabs>
   <TabItem label="Design">
     <div class="card">
-      <div class="card-header">
-        Featured
-      </div>
+      <div class="card-header">Featured</div>
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">
+          Go somewhere
+        </a>
       </div>
     </div>
   </TabItem>
   <TabItem label="HTML">
     ```html
     <div class="card">
-      <div class="card-header">
-        Featured
-      </div>
+      <div class="card-header">Featured</div>
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">
+          Go somewhere
+        </a>
       </div>
     </div>
     ```
@@ -172,33 +230,33 @@ Add an optional header and/or footer within a card.
 <Tabs>
   <TabItem label="Design">
     <div class="card text-center">
-      <div class="card-header">
-        Featured
-      </div>
+      <div class="card-header">Featured</div>
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">
+          Go somewhere
+        </a>
       </div>
-      <div class="card-footer text-muted">
-        2 days ago
-      </div>
+      <div class="card-footer text-muted">2 days ago</div>
     </div>
   </TabItem>
   <TabItem label="HTML">
     ```html
     <div class="card text-center">
-      <div class="card-header">
-        Featured
-      </div>
+      <div class="card-header">Featured</div>
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">
+          Go somewhere
+        </a>
       </div>
-      <div class="card-footer text-muted">
-        2 days ago
-      </div>
+      <div class="card-footer text-muted">2 days ago</div>
     </div>
     ```
   </TabItem>
@@ -271,28 +329,42 @@ Cards include a few options for working with images. Choose from appending “im
 <Tabs>
   <TabItem label="Design">
     <div class="card">
-      <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="rounded" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3
-              mins ago</small></p>
-        </div>
-   </div>
+      <img
+        src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+        class="rounded"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+      </div>
+    </div>
   </TabItem>
   <TabItem label="HTML">
     ```html
     <div class="card">
-      <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="rounded" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3
-              mins ago</small></p>
-        </div>
-   </div>
+      <img
+        src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+        class="rounded"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+      </div>
+    </div>
     ```
   </TabItem>
 </Tabs>
@@ -305,27 +377,41 @@ Cards include a few options for working with images. Choose from appending “im
   <TabItem label="Design">
     <div class="card">
       <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-      additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3
-    mins ago</small></p>
-     </div>
-   <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="rounded" alt="..." />
-  </div>
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+      </div>
+      <img
+        src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+        class="rounded"
+        alt="..."
+      />
+    </div>
   </TabItem>
   <TabItem label="HTML">
     ```html
     <div class="card">
       <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-      additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3
-    mins ago</small></p>
-     </div>
-   <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="rounded" alt="..." />
-  </div>
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+      </div>
+      <img
+        src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+        class="rounded"
+        alt="..."
+      />
+    </div>
     ```
   </TabItem>
 </Tabs>
@@ -337,10 +423,17 @@ Turn an image into a card background and overlay your card’s text. Depending o
 <Tabs>
   <TabItem label="Design">
     <div class="card bg-dark text-white">
-      <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="rounded" alt="..." />
+      <img
+        src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+        class="rounded"
+        alt="..."
+      />
       <div class="card-img-overlay">
         <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
         <p class="card-text">Last updated 3 mins ago</p>
       </div>
     </div>
@@ -348,10 +441,17 @@ Turn an image into a card background and overlay your card’s text. Depending o
   <TabItem label="HTML">
     ```html
     <div class="card bg-dark text-white">
-      <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="rounded" alt="..." />
+      <img
+        src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+        class="rounded"
+        alt="..."
+      />
       <div class="card-img-overlay">
         <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
         <p class="card-text">Last updated 3 mins ago</p>
       </div>
     </div>
@@ -367,66 +467,126 @@ In addition to styling the content within cards, Bootstrap includes a few option
 
 Use card groups to render cards as a single, attached element with equal width and height columns. Card groups start off stacked and use display: flex; to become attached with uniform dimensions starting at the sm breakpoint.
 
-<Tabs>
-  <TabItem label="Design">
-    <div class="card-group">
-      <div class="card">
-        <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+<div class="not-content">
+  <Tabs>
+    <TabItem label="Design">
+      <div class="card-group">
+        <div class="card">
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </TabItem>
+    <TabItem label="HTML">
+      ```html
+      <div class="card-group">
+        <div class="card">
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-  </TabItem>
-  <TabItem label="HTML">
-    ```html
-    <div class="card-group">
-      <div class="card">
-        <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-    ```
-  </TabItem>
-</Tabs>
+      ```
+    </TabItem>
+  </Tabs>
+</div>
 
 ### Grid cards
 
@@ -437,37 +597,68 @@ Use the Bootstrap grid system and its.row-cols classes to control how many grid 
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <div class="card">
-          <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content.
+            </p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
           </div>
         </div>
       </div>
@@ -478,37 +669,68 @@ Use the Bootstrap grid system and its.row-cols classes to control how many grid 
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <div class="card">
-          <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content.
+            </p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" class="card-img-top" alt="..." />
+          <img
+            src="//www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
           </div>
         </div>
       </div>
@@ -516,3 +738,34 @@ Use the Bootstrap grid system and its.row-cols classes to control how many grid 
     ```
   </TabItem>
 </Tabs>
+
+:::note
+The variables used for this component.
+
+### Outside of tag
+
+| Name                 | Default value  | Info                                 |
+| -------------------- | -------------- | ------------------------------------ |
+| --card-bg            | var(--body-bg) | Card background                      |
+| --card-sy            | 1rem           | (Padding) Size block (Top & Bottom)  |
+| --card-sx            | 1rem           | (Padding) Size inline (Right & Left) |
+| --card-c             | var(--body-c)  | Text color                           |
+| --card-title-sy      | 0.5rem         | Title margin bottom                  |
+| --card-bw            | var(--bw)      | Border widht                         |
+| --card-bc            | var(--bc)      | Border color                         |
+| --card-br            | var(--br)      | Border radius                        |
+| --card-cap-c         | var(--h-c)     | Header & Footer Text color           |
+| --card-c             | var(--body-c)  | Card body color                      |
+| --card-img-overlay-p | 1rem           | card-img-overlay padding             |
+
+### Inside of tag
+
+| Name             | Default value        | Info                                        |
+| ---------------- | -------------------- | ------------------------------------------- |
+| --\_card-title-s | 0.5rem               | Title margin bottom                         |
+| --card-inner-br  | calc(0.375rem - 1px) | Border radius                               |
+| --card-cap-py    | var(--br)            | Header & Footer paddin block (Top & Bottom) |
+| --card-cap-px    | var(--br)            | Header & Footer inline (Right & Left)       |
+| --card-cap-bg    | var(--br)            | Header & Footer background color            |
+
+:::
