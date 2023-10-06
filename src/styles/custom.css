@@ -103,6 +103,12 @@
   padding-block: 0.5rem;
 }
 
+code {
+  font-size: 0.875em;
+  color: var(--c-danger);
+  word-wrap: break-word;
+}
+
 @media (min-width: 72rem) {
   [data-has-sidebar] .main-pane {
     --sl-content-margin-inline: auto !important;
