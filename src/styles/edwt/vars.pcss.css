@@ -110,6 +110,6 @@
   --c-warning: #ffc107;
   --c-info: #0dcaf0;
   --c-danger: #dc3545;
-  --c-light: #f3f3f3;
-  --c-dark: #212529;
+  --c-light: var(--c-gray-100);
+  --c-dark: var(--c-gray-900);
 }

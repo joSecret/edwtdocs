@@ -49,6 +49,17 @@ export default defineConfig({
         },
         {
           label: 'Forms',
+          items: [
+            { label: 'Overview', link: '/forms/overview/' },
+            { label: 'Form control', link: '/forms/form-control/' },
+            { label: 'Select', link: '/forms/select/' },
+            { label: 'Checks & radios', link: '/forms/checks-radios/' },
+            { label: 'Range', link: '/forms/range/' },
+            { label: 'Input group', link: '/forms/input-group/' },
+            { label: 'Floating labels', link: '/forms/floating-labels/' },
+            { label: 'Layout', link: '/forms/layout/' },
+            { label: 'Validation', link: '/forms/validation/' },
+          ],
           autogenerate: { directory: 'forms' },
         },
         {
