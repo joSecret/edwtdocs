@@ -19,6 +19,14 @@ Form controls are styled with a mix of Sass and CSS variables, allowing them to 
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
       </div>
       <div class="mb-3">
+        <label for="inputDate" class="form-label">Input Date</label>
+        <input class="form-control" type="date" id="inputDate" name="trip-start" value="2023-10-08" min="2018-01-01" max="2018-12-31" />
+      </div>
+      <div class="mb-3">
+        <label for="meeting-time" class="form-label">Input Date & Time</label>
+        <input class="form-control" type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" />
+      </div>
+      <div>
         <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
@@ -31,8 +39,12 @@ Form controls are styled with a mix of Sass and CSS variables, allowing them to 
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
         </div>
         <div class="mb-3">
+          <label for="inputDate" class="form-label">Input Date</label>
+          <input type="date" id="inputDate" name="trip-start" value="2023-10-08" min="2018-01-01" max="2018-12-31" />
+        </div>
+        <div>
           <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea class="form-control" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
       ```
     </TabItem>
@@ -300,28 +312,21 @@ Learn more about [support for datalist elements](https://caniuse.com/datalist).
 :::note
 The variables used for this component.
 
-| Name       | Default value                                 | Info                          |
-| ---------- | --------------------------------------------- | ----------------------------- |
-| --btn-py   | 0.375rem                                      | Padding block (Top & Bottom)  |
-| --btn-px   | 0.75rem                                       | Padding inline (Right & Left) |
-| --btn-fw   | var(--fw-normal)                              | Font weight                   |
-| --btn-fs   | var(--fs-base)                                | Font size                     |
-| --btn-lh   | var(--lh)                                     | Line height                   |
-| --btn-ff   | inherit                                       | Font Family                   |
-| --btn-c    | var(--body-c)                                 | Text color                    |
-| --btn-bc   | var(--bc)                                     | Border color                  |
-| --btn-bw   | var(--bw)                                     | Border width                  |
-| --btn-br   | var(--br)                                     | Border radius                 |
-| --btn-bg   | transparent                                   | Background color              |
-| --btn-tt   | 0.15s                                         | Button time transition        |
-| --btn-c_h  | var(--btn-c)                                  | Hover color                   |
-| --btn-bg_h | color-mix(in oklab, var(--btn-bg), black 10%) | Hover background              |
-| --btn-bc_h | color-mix(in oklab, var(--btn-bc), black 10%) | Hover border color            |
-| --btn-c_a  | var(--btn-c)                                  | Active color                  |
-| --btn-bg_a | color-mix(in oklab, var(--btn-bg), black 20%) | Active background             |
-| --btn-bc_a | color-mix(in oklab, var(--btn-bc), black 20%) | Active border color           |
-| --btn-c_d  | var(--btn-c)                                  | Disabled color                |
-| --btn-bg_d | color-mix(in oklab, var(--btn-bg), white 20%) | Disabled background           |
-| --btn-bc_d | color-mix(in oklab, var(--btn-bc), black 20%) | Disabled border color         |
+| Name                 | Default value                                                   | Info                          |
+| -------------------- | --------------------------------------------------------------- | ----------------------------- |
+| --input-py           | 0.375rem                                                        | Padding block (Top & Bottom)  |
+| --input-px           | 0.75rem                                                         | Padding inline (Right & Left) |
+| --input-fs           | var(--fs-base)                                                  | Font size                     |
+| --input-fw           | var(--fw-normal)                                                | Font weight                   |
+| --input-c            | var(--body-c)                                                   | Text color                    |
+| --input-bg           | var(--body-bg)                                                  | Background color              |
+| --input-bc           | var(--bc)                                                       | Border color                  |
+| --input-bw           | var(--bw)                                                       | Border width                  |
+| --input-br           | var(--br)                                                       | Border radius                 |
+| --input-c_f          | var(--input-c)                                                  | Focus background color        |
+| --input-bg_f         | var(--input-bg)                                                 | Focus background color        |
+| --input-bc_f         | var(--input-bc)                                                 | Focus border color            |
+| --input-box-s_f      | 0 0 4px 0.25em color-mix(in srgb, var(--c-primary), white 75%); | Focus box shadow              |
+| --input-c_placholder | var(--c-gray-600)                                               | Placeholder color             |
 
 :::
